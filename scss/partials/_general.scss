@@ -1,0 +1,33 @@
+/* general */
+body {
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-400);
+  color: hsl(var(--clr-black));
+  background-color: hsl(var(--clr-white));
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 0 1.5em;
+  margin: 0 auto;
+  max-width: 60rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  /* added line */
+  border: 0;
+}
+
+.basic-link {
+  color: hsl(var(--clr-blue));
+}
