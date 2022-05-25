@@ -1,7 +1,8 @@
 // Content Page Styles
 .page-section {
   flex: 1;
-  padding: 2rem;
+  padding: 2rem 2rem 5rem;
+  width: 100%;
 
   h1 {
     color: hsl(var(--clr-darkorange));
@@ -10,11 +11,28 @@
   }
 
   h2 {
+    font-family: var(--ff-sans-heading);
     color: hsl(var(--clr-blue));
-    margin: 1.5rem 0;
+    margin: 3rem 0 0.5rem;
   }
 
   p {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+    max-width: 60ch;
+  }
+
+  .email {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  .address {
+    font-weight: bold;
+    margin: 1.5rem 0;
+  }
+
+  img {
+    display: block;
+    width: min(100%, 35rem);
   }
 }

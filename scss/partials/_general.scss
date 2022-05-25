@@ -33,3 +33,7 @@ body {
 .basic-link {
   color: hsl(var(--clr-blue));
 }
+
+.basic-link:hover {
+  color: hsl(var(--clr-red));
+}
