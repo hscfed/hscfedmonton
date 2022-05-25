@@ -6,7 +6,8 @@
   --clr-blue: 199 100% 20%;
   --clr-red: 3 100% 33%;
   --clr-green: 101 100% 23%;
-  --clr-orange: 40 100% 35%;
+  --clr-orange: 40 100% 40%;
+  --clr-darkorange: 40 100% 35%;
   --clr-darkred: 3, 100%, 28%;
   /* font-families */
   --ff-serif: "Bellefair", serif;
@@ -45,6 +46,8 @@ select {
 }
 /* general */
 body {
+  display: flex;
+  flex-direction: column;
   font-family: var(--ff-sans-normal);
   font-size: var(--fs-400);
   color: hsl(var(--clr-black));
@@ -263,7 +266,7 @@ body {
   background-color: hsl(var(--clr-green));
 }
 .activities-grid .christmas {
-  background-color: hsl(var(--clr-orange));
+  background-color: hsl(var(--clr-darkorange));
 }
 .activities-grid .curriculum,
 .activities-grid .track {
@@ -352,6 +355,22 @@ footer .footer-flex .info img {
   footer .info {
     flex: 1;
   }
+}
+.page-section {
+  flex: 1;
+  padding: 2rem;
+}
+.page-section h1 {
+  color: hsl(var(--clr-darkorange));
+  font-family: var(--ff-sans-heading);
+  font-size: 2.5rem;
+}
+.page-section h2 {
+  color: hsl(var(--clr-blue));
+  margin: 1.5rem 0;
+}
+.page-section p {
+  margin: 1rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
