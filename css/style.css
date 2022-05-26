@@ -46,8 +46,6 @@ select {
 }
 /* general */
 body {
-  display: flex;
-  flex-direction: column;
   font-family: var(--ff-sans-normal);
   font-size: var(--fs-400);
   color: hsl(var(--clr-black));
@@ -87,67 +85,96 @@ body {
 /* Primary Header */
 .primary-header {
   display: flex;
+  gap: 1rem;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1rem;
 }
 .primary-header .logo-img {
-  width: 4rem;
+  margin: 2rem;
+  width: 5rem;
 }
 .primary-header .mobile-nav-toggle {
-  z-index: 9999;
-  cursor: pointer;
-  background-color: transparent;
-  background-image: url("../img/icon-hamburger.svg");
-  background-repeat: no-repeat;
-  width: 1.75rem;
-  border: 0;
-  aspect-ratio: 1;
+  display: none;
 }
-.primary-header .mobile-nav-toggle[aria-expanded=true] {
-  background-image: url("../img/icon-close.svg");
-}
-
-.primary-navigation {
+.primary-header .primary-navigation {
   display: flex;
-  flex-direction: column;
   gap: 2rem;
   list-style: none;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  right: 0;
-  width: 100%;
-  padding: min(30vh, 5rem) 2em;
-  text-align: center;
-  transform: translateX(100%);
-  transition: transform 350ms ease-out;
-  /* defaul background if backdrop-filter not supported */
-  background-color: hsl(var(--clr-blue)/0.95);
 }
-.primary-navigation a {
-  color: white;
+.primary-header .primary-navigation a {
+  font-family: var(--ff-sans-heading);
+  color: hsl(var(--clr-dark));
   text-decoration: none;
   text-transform: uppercase;
 }
-.primary-navigation a:hover {
-  text-decoration: underline;
+.primary-header .primary-navigation a:hover {
+  text-decoration: underline hsl(var(--clr-red));
 }
-
-/* Apply if backdrop-filter is supported */
-@supports (backdrop-filter: blur(1rem)) {
-  .primary-navigation {
-    background-color: hsl(var(--clr-blue)/0.9);
-    backdrop-filter: blur(0.5rem);
-  }
+.primary-header .primary-navigation .join {
+  background-color: hsl(var(--clr-red));
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem 1.5rem;
 }
-.primary-navigation[data-visible=true] {
+.primary-header .primary-navigation .join:hover {
+  background-color: hsl(var(--clr-darkred));
+  text-decoration: none;
+}
+.primary-header .primary-navigation[data-visible=true] {
   transform: translateX(0%);
 }
 
-@media (min-width: 30rem) {
+@media (max-width: 50rem) {
+  .primary-header {
+    /* Apply if backdrop-filter is supported */
+  }
   .primary-header .logo-img {
-    width: 5rem;
+    width: 4rem;
+  }
+  .primary-header .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("../img/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    width: 1.75rem;
+    border: 0;
+    aspect-ratio: 1;
+    top: 3.5rem;
+    right: 2rem;
+  }
+  .primary-header .mobile-nav-toggle[aria-expanded=true] {
+    background-image: url("../img/icon-close.svg");
+  }
+  .primary-header .primary-navigation {
+    gap: 2rem;
+    list-style: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2em;
+    text-align: center;
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+    /* defaul background if backdrop-filter not supported */
+    background-color: hsl(var(--clr-blue)/0.95);
+  }
+  .primary-header .primary-navigation a {
+    color: white;
+  }
+  .primary-header .primary-navigation a:hover {
+    text-decoration: underline white;
+  }
+  @supports (backdrop-filter: blur(1rem)) {
+    .primary-header .primary-navigation {
+      background: hsl(var(--clr-blue)/0.8);
+      backdrop-filter: blur(0.75rem);
+    }
   }
 }
 .showcase {
@@ -361,9 +388,7 @@ footer .footer-flex .info img {
   }
 }
 .page-section {
-  flex: 1;
   padding: 2rem 2rem 5rem;
-  width: 100%;
 }
 .page-section h1 {
   color: hsl(var(--clr-darkorange));
@@ -375,9 +400,14 @@ footer .footer-flex .info img {
   color: hsl(var(--clr-blue));
   margin: 3rem 0 0.5rem;
 }
-.page-section p {
-  margin: 0.5rem 0;
-  max-width: 60ch;
+.page-section p,
+.page-section ol,
+.page-section ul {
+  margin: 1rem 0;
+  max-width: 65ch;
+}
+.page-section li {
+  margin-bottom: 1rem;
 }
 .page-section .email {
   font-weight: bold;
@@ -390,6 +420,9 @@ footer .footer-flex .info img {
 .page-section img {
   display: block;
   width: min(100%, 35rem);
+}
+.page-section ol {
+  padding-left: 1.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */

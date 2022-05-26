@@ -1,8 +1,7 @@
 // Content Page Styles
 .page-section {
-  flex: 1;
+  // height: 100%; for small content???
   padding: 2rem 2rem 5rem;
-  width: 100%;
 
   h1 {
     color: hsl(var(--clr-darkorange));
@@ -16,9 +15,15 @@
     margin: 3rem 0 0.5rem;
   }
 
-  p {
-    margin: 0.5rem 0;
-    max-width: 60ch;
+  p,
+  ol,
+  ul {
+    margin: 1rem 0;
+    max-width: 65ch;
+  }
+
+  li {
+    margin-bottom: 1rem;
   }
 
   .email {
@@ -34,5 +39,9 @@
   img {
     display: block;
     width: min(100%, 35rem);
+  }
+
+  ol {
+    padding-left: 1.25rem;
   }
 }
