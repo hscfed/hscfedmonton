@@ -14,6 +14,7 @@
   --ff-sans-cond: "Barlow Condensed", sans-serif;
   --ff-sans-normal: "Open Sans", sans-serif;
   --ff-sans-heading: "Roboto", sans-serif;
+  --ff-sans-heading2: "Quicksand", sans-serif;
 }
 
 /* Box sizing */
@@ -47,8 +48,7 @@ select {
 /* general */
 body {
   font-family: var(--ff-sans-normal);
-  font-size: var(--fs-400);
-  color: hsl(var(--clr-black));
+  color: #333;
   background-color: hsl(var(--clr-white));
   line-height: 1.6;
   min-height: 100vh;
@@ -75,6 +75,7 @@ body {
 }
 
 .basic-link {
+  font-weight: 500;
   color: hsl(var(--clr-blue));
 }
 
@@ -82,6 +83,29 @@ body {
   color: hsl(var(--clr-red));
 }
 
+.call-to-action {
+  display: block;
+  font-family: var(--ff-sans-heading);
+  text-decoration: none;
+  background-color: hsl(var(--clr-red));
+  color: white;
+  padding: 0.5rem 3rem;
+  margin-right: 0.5rem;
+  margin-block: 0.5rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.call-to-action:hover {
+  background-color: hsl(var(--clr-darkred));
+}
+
+@media (min-width: 30rem) {
+  .call-to-action {
+    display: inline-block;
+  }
+}
 /* Primary Header */
 .primary-header {
   display: flex;
@@ -193,17 +217,21 @@ body {
 .showcase .showcase-title img {
   width: 3rem;
   vertical-align: middle;
+  margin-right: 3px;
 }
 .showcase .showcase-title h1 {
-  font-family: var(--ff-sans-heading);
-  font-weight: 100;
+  font-family: var(--ff-sans-heading2);
   margin: 0.5rem 0;
   letter-spacing: 2px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  text-shadow: 2px 2px #AAA;
+  text-transform: uppercase;
 }
 .showcase h2 {
   font-family: var(--ff-sans-heading);
-  font-size: 1.75rem;
-  font-weight: 400;
+  font-size: 1.5rem;
   color: hsl(var(--clr-blue));
   margin-bottom: 2rem;
   text-align: center;
@@ -225,6 +253,18 @@ body {
   background-color: hsl(var(--clr-darkred));
 }
 
+.bible-quote {
+  max-width: 40rem;
+  margin: 3rem auto 5rem;
+  padding: 0 2rem;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+.bible-quote .reference {
+  font-style: normal;
+  font-size: 0.8rem;
+}
+
 @media (min-width: 40rem) {
   .showcase {
     flex-direction: row;
@@ -236,31 +276,27 @@ body {
     justify-content: center;
   }
   .showcase .showcase-title img {
-    width: 5rem;
+    width: 4rem;
   }
   .showcase .showcase-title h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .showcase h2 {
     font-size: 2rem;
   }
   .showcase a {
     width: 60%;
   }
-}
-.bible-quote {
-  max-width: 40rem;
-  margin: 3rem auto 5rem;
-  padding: 0 2rem;
-  font-size: 1.25rem;
-  font-style: italic;
-}
-.bible-quote .reference {
-  font-style: normal;
-  font-size: 0.8rem;
-}
 
+  .bible-quote {
+    font-size: 1.25rem;
+  }
+}
 .activities-heading h2 {
   font-family: var(--ff-sans-heading);
   color: hsl(var(--clr-blue));
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -324,6 +360,53 @@ body {
     background-color: hsl(var(--clr-red));
   }
 }
+.page-section {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 2rem 5rem;
+}
+.page-section h1 {
+  color: hsl(var(--clr-darkorange));
+  font-family: var(--ff-sans-heading);
+  font-size: 2.5rem;
+}
+.page-section h2 {
+  font-family: var(--ff-sans-heading);
+  color: hsl(var(--clr-blue));
+  margin: 3rem 0 0.5rem;
+}
+.page-section h3 {
+  margin-block: 1.5rem;
+}
+.page-section p,
+.page-section ol,
+.page-section ul {
+  margin: 1rem 0;
+}
+.page-section ol,
+.page-section ul {
+  padding-left: 1.25rem;
+}
+.page-section li {
+  margin-bottom: 0.5rem;
+}
+.page-section .email {
+  font-weight: bold;
+  font-size: 1.25rem;
+  letter-spacing: 1.5px;
+}
+.page-section .address {
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+.page-section img {
+  display: block;
+  width: min(100%, 35rem);
+}
+.page-section ol {
+  padding-left: 1.25rem;
+}
+
 footer {
   background-color: hsl(var(--clr-blue));
   color: white;
@@ -386,43 +469,6 @@ footer .footer-flex .info img {
   footer .info {
     flex: 1;
   }
-}
-.page-section {
-  padding: 2rem 2rem 5rem;
-}
-.page-section h1 {
-  color: hsl(var(--clr-darkorange));
-  font-family: var(--ff-sans-heading);
-  font-size: 2.5rem;
-}
-.page-section h2 {
-  font-family: var(--ff-sans-heading);
-  color: hsl(var(--clr-blue));
-  margin: 3rem 0 0.5rem;
-}
-.page-section p,
-.page-section ol,
-.page-section ul {
-  margin: 1rem 0;
-  max-width: 65ch;
-}
-.page-section li {
-  margin-bottom: 1rem;
-}
-.page-section .email {
-  font-weight: bold;
-  font-size: 1.25rem;
-}
-.page-section .address {
-  font-weight: bold;
-  margin: 1.5rem 0;
-}
-.page-section img {
-  display: block;
-  width: min(100%, 35rem);
-}
-.page-section ol {
-  padding-left: 1.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */

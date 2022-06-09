@@ -1,6 +1,7 @@
 // Content Page Styles
 .page-section {
-  // height: 100%; for small content???
+  max-width: 900px;
+  margin: auto;
   padding: 2rem 2rem 5rem;
 
   h1 {
@@ -15,20 +16,29 @@
     margin: 3rem 0 0.5rem;
   }
 
+  h3 {
+    margin-block: 1.5rem;
+  }
+
   p,
   ol,
   ul {
     margin: 1rem 0;
-    max-width: 65ch;
+  }
+
+  ol,
+  ul {
+    padding-left: 1.25rem;
   }
 
   li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .email {
     font-weight: bold;
     font-size: 1.25rem;
+    letter-spacing: 1.5px;
   }
 
   .address {
