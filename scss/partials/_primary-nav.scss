@@ -4,9 +4,10 @@
   gap: 1rem;
   align-items: center;
   justify-content: space-between;
+  padding-top: 1rem;
 
   .logo-img {
-    margin: 2rem;
+    // margin: 2rem;
     width: 5rem;
   }
 
@@ -66,8 +67,8 @@
       width: 1.75rem;
       border: 0;
       aspect-ratio: 1;
-      top: 3.5rem;
-      right: 2rem;
+      top: 2.5rem;
+      right: 1.5rem;
     }
 
     .mobile-nav-toggle[aria-expanded="true"] {

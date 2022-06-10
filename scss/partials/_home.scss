@@ -28,7 +28,7 @@
       font-size: 1.8rem;
       font-weight: 600;
       color: #333;
-      text-shadow: 2px 2px #AAA;
+      text-shadow: 1px 1px #AAA;
       text-transform: uppercase;
     }
   }
@@ -67,6 +67,7 @@
   padding: 0 2rem;
   font-size: 1.1rem;
   font-style: italic;
+  text-align: center;
 
   .reference {
     font-style: normal;

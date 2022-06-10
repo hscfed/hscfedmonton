@@ -54,4 +54,39 @@
   ol {
     padding-left: 1.25rem;
   }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .drop-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0;
+
+    i {
+      transition: transform 100ms ease-in-out;
+    }
+  }
+
+  .drop-body {
+    display: none;
+    border: 1px solid grey;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding-inline: 0.75rem;
+  }
+
+  .show-drop-body {
+    display: block;
+  }
+
+  .spin {
+    transform: rotate(180deg);
+  }
 }

@@ -112,9 +112,9 @@ body {
   gap: 1rem;
   align-items: center;
   justify-content: space-between;
+  padding-top: 1rem;
 }
 .primary-header .logo-img {
-  margin: 2rem;
   width: 5rem;
 }
 .primary-header .mobile-nav-toggle {
@@ -166,8 +166,8 @@ body {
     width: 1.75rem;
     border: 0;
     aspect-ratio: 1;
-    top: 3.5rem;
-    right: 2rem;
+    top: 2.5rem;
+    right: 1.5rem;
   }
   .primary-header .mobile-nav-toggle[aria-expanded=true] {
     background-image: url("../img/icon-close.svg");
@@ -226,7 +226,7 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
   color: #333;
-  text-shadow: 2px 2px #AAA;
+  text-shadow: 1px 1px #AAA;
   text-transform: uppercase;
 }
 .showcase h2 {
@@ -259,6 +259,7 @@ body {
   padding: 0 2rem;
   font-size: 1.1rem;
   font-style: italic;
+  text-align: center;
 }
 .bible-quote .reference {
   font-style: normal;
@@ -405,6 +406,35 @@ body {
 }
 .page-section ol {
   padding-left: 1.25rem;
+}
+.page-section .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.page-section .drop-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+.page-section .drop-btn i {
+  transition: transform 100ms ease-in-out;
+}
+.page-section .drop-body {
+  display: none;
+  border: 1px solid grey;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding-inline: 0.75rem;
+}
+.page-section .show-drop-body {
+  display: block;
+}
+.page-section .spin {
+  transform: rotate(180deg);
 }
 
 footer {
