@@ -8,6 +8,17 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  >section {
+    flex: 1;
+    width: 100%;
+  }
+}
+
 .container {
   padding: 0 1.5em;
   margin: 0 auto;
