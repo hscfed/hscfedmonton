@@ -419,6 +419,7 @@ body {
   gap: 1rem;
   padding: 0.5rem 1rem;
   margin: 0;
+  cursor: pointer;
 }
 .page-section .drop-btn i {
   transition: transform 100ms ease-in-out;
