@@ -27,7 +27,7 @@ headerTemplate.innerHTML = `
         <a href="activities.html">Activities</a>
       </li>
       <li>
-        <a href="#">Members</a>
+        <a href="https://drive.google.com/drive/folders/1Wfvso8UsOgKfKCfFsZCTrUKnFars7vO4?usp=sharing" target="_blank">Members</a>
       </li>
       <li>
         <a class="join" href="join-hscf.html">Join HSCF</a>
@@ -83,7 +83,7 @@ footerTemplate.innerHTML = `
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
             <li><a href="activities.html">Activities</a></li>
-            <li><a href="#">Members</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1Wfvso8UsOgKfKCfFsZCTrUKnFars7vO4?usp=sharing" target="_blank">Members</a></li>
             <li><a href="join-hscf.html">Join HSCF</a></li>
           </ul>
         </div>

@@ -52,7 +52,7 @@
     text-transform: uppercase;
     text-align: center;
     width: 100%;
-    margin: auto;
+    margin: 0 auto 1rem;
   }
 
   a:hover {
@@ -75,7 +75,7 @@
   }
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 50rem) {
   .showcase {
     flex-direction: row;
     padding-block: 4rem;
@@ -101,6 +101,10 @@
 
     a {
       width: 60%;
+    }
+
+    .hide {
+      display: none;
     }
   }
 
@@ -174,7 +178,7 @@
 
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 50rem) {
   .activities-grid {
     grid-template-columns: repeat(3, 1fr);
 

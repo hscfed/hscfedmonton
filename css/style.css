@@ -257,7 +257,7 @@ main > section {
   text-transform: uppercase;
   text-align: center;
   width: 100%;
-  margin: auto;
+  margin: 0 auto 1rem;
 }
 .showcase a:hover {
   background-color: hsl(var(--clr-darkred));
@@ -276,7 +276,7 @@ main > section {
   font-size: 0.8rem;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 50rem) {
   .showcase {
     flex-direction: row;
     padding-block: 4rem;
@@ -298,6 +298,9 @@ main > section {
   }
   .showcase a {
     width: 60%;
+  }
+  .showcase .hide {
+    display: none;
   }
 
   .bible-quote {
@@ -354,7 +357,7 @@ main > section {
   background-color: hsl(var(--clr-red));
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 50rem) {
   .activities-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -385,6 +388,7 @@ main > section {
   font-family: var(--ff-sans-heading);
   color: hsl(var(--clr-blue));
   margin: 3rem 0 0.5rem;
+  text-transform: uppercase;
 }
 .page-section h3 {
   margin-block: 1.5rem;
@@ -400,6 +404,9 @@ main > section {
 }
 .page-section li {
   margin-bottom: 0.5rem;
+}
+.page-section hr {
+  margin: 1rem auto;
 }
 .page-section .email {
   font-weight: bold;
