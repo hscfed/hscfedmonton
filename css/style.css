@@ -448,6 +448,12 @@ main > section {
   transform: rotate(180deg);
 }
 
+@media (min-width: 45rem) {
+  .page-section .schedule {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 footer {
   background-color: hsl(var(--clr-blue));
   color: white;
