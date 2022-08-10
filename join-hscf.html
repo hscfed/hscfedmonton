@@ -1,226 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>HSCF (Edm.)</title>
 
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <title>HSCF (Edm.)</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Quicksand&display=swap"
-    rel="stylesheet">
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/5da9f5ff62.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css" />
 
-  <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/join-hscf.js" defer></script>
+    <script src="./js/index.js"></script>
+  </head>
 
-  <script src="./js/join-hscf.js" defer></script>
-  <script src="./js/index.js"></script>
-</head>
+  <body>
+    <main>
+      <main-header></main-header>
 
-<body>
-  <main>
-    <main-header></main-header>
+      <section class="page-section container">
+        <h1>Join HSCF</h1>
 
+        <p>
+          <strong
+            >Please complete the three steps below to become a new HSCF member
+            or to renew your membership.</strong
+          >
+        </p>
 
-    <section class="page-section container">
-      <h1>Join HSCF</h1>
+        <p>
+          The HSCF membership year is from July 1 to June 30. Registration for
+          the new HSCF season will open on July 1 of that season and the first
+          meeting is scheduled for the last Monday of August.
+        </p>
+        <p>
+          The annual membership fee is not prorated for any months missed, so we
+          do not generally accept new memberships late in the membership year.
+        </p>
 
-      <p>
-        <strong>Please complete the three steps below to become a new HSCF member or to renew your membership.</strong>
-      </p>
+        <hr />
 
-      <p>
-        The HSCF membership year is from July 1 to June 30. Registration for the new HSCF season will open on July 1 of
-        that season and the first meeting is scheduled for the last Monday of August.
-      </p>
-      <p>
-        The annual membership fee is not prorated for any months missed, so we do not generally accept new
-        memberships late in the membership year.
-      </p>
+        <h2>Step 1: Review Membership Information</h2>
 
-      <hr>
+        <h3>Benefits of Membership</h3>
+        <ul>
+          <li>Membership includes the whole family.</li>
+          <li>
+            Membership provides a network of support for your homeschooling
+            journey.
+          </li>
+          <li>
+            Membership gains access to HSCF Meetings & Events
+            <em
+              >(Speakers, Fellowship, Christmas Program, Curriculum Sale,
+              Science & Heritage Fair, Poetry Cafe, Track & Field, …)</em
+            >.
+          </li>
+          <li>
+            Membership allows use of the HSCF Library that provides many
+            Christian resources that are not available in the public library.
+          </li>
+          <li>
+            Membership allows a discounted Track & Field fee. All other events
+            are included with membership.
+          </li>
+        </ul>
 
-      <h2>Step 1: Review Membership Information</h2>
+        <h3>Criteria for Membership</h3>
+        <p>
+          You may apply for an HSCF membership if you meet the following
+          criteria:
+        </p>
+        <ul>
+          <li>
+            You are considering undertaking home-schooling, actively
+            home-schooling, or home-schooled in the past.
+          </li>
+          <li>You pay the HSCF Membership fee of $50.</li>
+          <li>
+            You agree with the HSCF Statement of Faith and the HSCF Liability
+            Information.
+          </li>
+        </ul>
 
-      <h3>Benefits of Membership</h3>
-      <ul>
-        <li>
-          Membership includes the whole family.
-        </li>
-        <li>
-          Membership provides a network of support for your homeschooling journey.
-        </li>
-        <li>
-          Membership gains access to HSCF Meetings & Events <em>(Speakers, Fellowship, Christmas Program, Curriculum
-            Sale,
-            Science & Heritage Fair, Poetry Cafe, Track & Field, …)</em>.
-        </li>
-        <li>
-          Membership allows use of the HSCF Library that provides many Christian resources that are not available in the
-          public library.
-        </li>
-        <li>
-          Membership allows a discounted Track & Field fee. All other events are included with membership.
-        </li>
-      </ul>
+        <div class="buttons">
+          <div>
+            <div class="drop-btn call-to-action" data-target="#faith">
+              <span>Statement of Faith</span>
+              <i class="fa-solid fa-chevron-down fa-lg"></i>
+            </div>
+            <div id="faith" class="drop-body">
+              <ol>
+                <li>
+                  I believe the Bible is the inspired word of God and is my
+                  supreme and final authority.
+                </li>
+                <li>
+                  I believe there is one God eternally existing in three
+                  persons: Father, Son and Holy Spirit.
+                </li>
+                <li>
+                  I believe our Lord Jesus is the Son of God, conceived of the
+                  Holy Spirit to Mary, a virgin. He died on a cross. The
+                  shedding of His blood was the atonement for my sins. I believe
+                  He was raised from the dead and ascended to heaven - where He
+                  is my advocate at the Father's right hand.
+                </li>
+                <li>
+                  I believe in the personal and literal return of Jesus Christ
+                  for His Church.
+                </li>
+                <li>
+                  I believe Jesus Christ is the only way to heaven and that a
+                  person must receive Him as their Saviour and Lord.
+                </li>
+                <li>
+                  I believe in life after death - either in heaven or in hell.
+                </li>
+              </ol>
+            </div>
+          </div>
 
-      <h3>Criteria for Membership</h3>
-      <p>You may apply for an HSCF membership if you meet the following criteria:</p>
-      <ul>
-        <li>
-          You are considering undertaking home-schooling, actively home-schooling, or home-schooled in the past.
-        </li>
-        <li>
-          You pay the HSCF Membership fee of $50.
-        </li>
-        <li>
-          You agree with the HSCF Statement of Faith and the HSCF Liability Information.
-        </li>
-      </ul>
+          <div>
+            <div class="drop-btn call-to-action" data-target="#liability">
+              <span>Liability Information</span>
+              <i class="fa-solid fa-chevron-down fa-lg"></i>
+            </div>
+            <div id="liability" class="drop-body">
+              <ol>
+                <li>
+                  HSCF assumes no liability and all events & activities are at
+                  your own risk and responsibility. If your family chooses to
+                  participate in HSCF group events, please be informed about the
+                  nature & safety of each event and of the appropriate conduct
+                  expected; you as the parent are solely responsible for your
+                  child/ren at all times. An organizer may additionally require
+                  you to sign a waiver for an event in which you choose to
+                  participate.
+                </li>
+                <li>
+                  By registering, you have given consent to receive HSCF member
+                  emails.
+                </li>
+                <li>
+                  We reserve the right to withhold membership privileges if a
+                  member misrepresents or misuses an HSCF membership in any way.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
 
-      <div class="buttons">
+        <h2>Step 2: Complete Membership Registration Form</h2>
+        <p>
+          <strong
+            >Please click the button below to be taken to the HSCF Membership
+            Registration form.</strong
+          >
+        </p>
+        <p>
+          After completing the form, please return to this page to complete Step
+          3.
+        </p>
         <div>
-          <div class="drop-btn call-to-action" data-target="#faith">
-            <span>Statement of Faith</span>
-            <i class="fa-solid fa-chevron-down fa-lg"></i>
-          </div>
-          <div id="faith" class="drop-body">
-            <ol>
-              <li>I believe the Bible is the inspired word of God and is my supreme and final authority.</li>
-              <li>I believe there is one God eternally existing in three persons: Father, Son and Holy Spirit.</li>
-              <li>I believe our Lord Jesus is the Son of God, conceived of the Holy Spirit to Mary, a virgin. He died on
-                a
-                cross. The shedding of His blood was the atonement for my sins. I believe He was raised from the dead
-                and
-                ascended to heaven - where He is my advocate at the Father's right hand.</li>
-              <li>I believe in the personal and literal return of Jesus Christ for His Church.</li>
-              <li>I believe Jesus Christ is the only way to heaven and that a person must receive Him as their Saviour
-                and
-                Lord.</li>
-              <li>I believe in life after death - either in heaven or in hell.</li>
-            </ol>
-          </div>
+          <a
+            class="call-to-action"
+            href="https://forms.gle/vbgXEE2tizVb6ZpGA"
+            target="_blank"
+            >Registration Form</a
+          >
         </div>
 
-        <div>
-          <div class="drop-btn call-to-action" data-target="#liability">
-            <span>Liability Information</span>
-            <i class="fa-solid fa-chevron-down fa-lg"></i>
-          </div>
-          <div id="liability" class="drop-body">
-            <ol>
-              <li>HSCF assumes no liability and all events & activities are at your own risk and responsibility. If your
-                family chooses to participate in HSCF group events, please be informed about the nature & safety of each
-                event and of the appropriate conduct expected; you as the parent are solely responsible for your
-                child/ren
-                at all times. An organizer may additionally require you to sign a waiver for an event in which you
-                choose
-                to participate.</li>
-              <li>By registering, you have given consent to receive HSCF member emails.</li>
-              <li>We reserve the right to withhold membership privileges if a member misrepresents or misuses an HSCF
-                membership in any way.</li>
-            </ol>
+        <h2>Step 3: Pay Membership Fee</h2>
+        <p>
+          <strong
+            >Please click one of the buttons below to pay your membership fee of
+            $50 CAD.</strong
+          >
+        </p>
+        <p>
+          Payment may be made via Paypal, credit or debit. If you wish to pay
+          with cash or cheque, please contact the HSCF treasurer
+          <em>(hscftreasurer@gmail.com)</em> to make arrangements.
+        </p>
+
+        <div id="smart-button-container">
+          <div style="text-align: center">
+            <div id="paypal-button-container"></div>
           </div>
         </div>
-      </div>
+        <script
+          src="https://www.paypal.com/sdk/js?client-id=AXQBK2D4DPTmrDRETGsQ_NH8-Ra14piW8wKarpm_7FM46CQRVbAKeiuVqVuTA1F7w2QJtcCVz11QcPMx&enable-funding=venmo&currency=CAD&locale=en_CA"
+          data-sdk-integration-source="button-factory"
+        ></script>
+        <script>
+          function initPayPalButton() {
+            paypal
+              .Buttons({
+                style: {
+                  shape: 'rect',
+                  color: 'gold',
+                  layout: 'vertical',
+                  label: 'pay',
+                },
 
-      <h2>Step 2: Complete Membership Registration Form</h2>
-      <p>
-        <strong>Please click the button below to be taken to the HSCF Membership Registration form.</strong>
-      </p>
-      <p>
-        After completing the form, please return to this page to complete Step 3.
-      </p>
-      <div class="buttons">
-        <a class="call-to-action" href="https://forms.gle/vbgXEE2tizVb6ZpGA" target="_blank">Registration Form</a>
-      </div>
+                createOrder: function (data, actions) {
+                  return actions.order.create({
+                    purchase_units: [
+                      {
+                        description: 'HSCF Membership Fee',
+                        amount: {
+                          currency_code: 'CAD',
+                          value: 50,
+                        },
+                      },
+                    ],
+                  });
+                },
 
-      <h2>Step 3: Pay Membership Fee</h2>
-      <p>
-        <strong>Please click one of the buttons below to pay your membership fee of $50 CAD.</strong>
-      </p>
-      <p>
-        Payment may be made via Paypal, credit or debit. If you wish to pay with cash or cheque, please contact the HSCF
-        treasurer <em>(hscftreasurer@gmail.com)</em> to make arrangements.
-      </p>
+                onApprove: function (data, actions) {
+                  return actions.order.capture().then(function (orderData) {
+                    // Full available details
+                    console.log(
+                      'Capture result',
+                      orderData,
+                      JSON.stringify(orderData, null, 2)
+                    );
 
-      <div id="smart-button-container">
-        <div style="text-align: center;">
-          <div id="paypal-button-container"></div>
-        </div>
-      </div>
-      <script
-        src="https://www.paypal.com/sdk/js?client-id=AXQBK2D4DPTmrDRETGsQ_NH8-Ra14piW8wKarpm_7FM46CQRVbAKeiuVqVuTA1F7w2QJtcCVz11QcPMx&enable-funding=venmo&currency=CAD&locale=en_CA"
-        data-sdk-integration-source="button-factory"></script>
-      <script>
-        function initPayPalButton() {
-          paypal.Buttons({
-            style: {
-              shape: 'rect',
-              color: 'gold',
-              layout: 'vertical',
-              label: 'pay',
+                    // Show a success message within this page, e.g.
+                    const element = document.getElementById(
+                      'paypal-button-container'
+                    );
+                    element.innerHTML = '';
+                    element.innerHTML = '<h3>Thank you for your payment!</h3>';
 
-            },
+                    // Or go to another URL:  actions.redirect('thank_you.html');
+                  });
+                },
 
-            createOrder: function (data, actions) {
-              return actions.order.create({
-                purchase_units: [{
-                  "description": "HSCF Membership Fee",
-                  "amount": {
-                    "currency_code": "CAD",
-                    "value": 50
-                  }
-                }]
-              });
-            },
+                onError: function (err) {
+                  console.log(err);
+                },
+              })
+              .render('#paypal-button-container');
+          }
+          initPayPalButton();
+        </script>
 
-            onApprove: function (data, actions) {
-              return actions.order.capture().then(function (orderData) {
+        <p>
+          <em>
+            *You will receive an email response once you have completed all
+            three steps of the application process and the HSCF executive has
+            reviewed your application. Please be patient but feel free to email
+            hscftreasurer@gmail.com if you have any questions or concerns
+            regarding your application.
+          </em>
+        </p>
+      </section>
 
-                // Full available details
-                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-
-                // Show a success message within this page, e.g.
-                const element = document.getElementById('paypal-button-container');
-                element.innerHTML = '';
-                element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-                // Or go to another URL:  actions.redirect('thank_you.html');
-
-              });
-            },
-
-            onError: function (err) {
-              console.log(err);
-            }
-          }).render('#paypal-button-container');
-        }
-        initPayPalButton();
-      </script>
-
-
-      <p>
-        <em>
-          *You will receive an email response once you have completed all three steps of the application process and the
-          HSCF executive has reviewed your application. Please be patient but feel free to email hscftreasurer@gmail.com
-          if you
-          have any questions or concerns regarding your application.
-        </em>
-      </p>
-
-
-
-    </section>
-
-    <main-footer></main-footer>
-  </main>
-</body>
-
+      <main-footer></main-footer>
+    </main>
+  </body>
 </html>
