@@ -1,5 +1,6 @@
-// Main Header and Footer Components
+// Components
 
+// Header Component
 const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = `
   <link rel="stylesheet" href="./css/style.css">
@@ -42,7 +43,7 @@ class MainHeader extends HTMLElement {
     super();
 
     this.attachShadow({
-      mode: 'open'
+      mode: 'open',
     });
     this.shadowRoot.appendChild(headerTemplate.content.cloneNode(true));
   }
@@ -61,7 +62,7 @@ class MainHeader extends HTMLElement {
         primaryNav.dataset.visible = 'false';
         navToggle.setAttribute('aria-expanded', 'false');
       }
-    })
+    });
   }
 
   disconnectedCallback() {
@@ -70,6 +71,7 @@ class MainHeader extends HTMLElement {
   }
 }
 
+// Footer Component
 const footerTemplate = document.createElement('template');
 footerTemplate.innerHTML = `
   <link rel="stylesheet" href="./css/style.css">
@@ -118,7 +120,7 @@ class MainFooter extends HTMLElement {
     super();
 
     this.attachShadow({
-      mode: 'open'
+      mode: 'open',
     });
     this.shadowRoot.appendChild(footerTemplate.content.cloneNode(true));
   }
@@ -129,7 +131,56 @@ class MainFooter extends HTMLElement {
   }
 }
 
+// Activities Grid Component
+const activitiesTemplate = document.createElement('template');
+activitiesTemplate.innerHTML = `
+  <link rel="stylesheet" href="./css/style.css">
+  <section class="activities-grid">
+      <a class="meetings" href="meetings.html">
+        <div>
+          Meetings<br> <i class="fa-solid fa-users fa-lg"></i>
+        </div>
+      </a>
+      <a class="christmas" href="christmas-program.html">
+        <div>
+          Christmas Program<br> <i class="fa-solid fa-cross fa-lg"></i>
+        </div>
+      </a>
+      <a class="curriculum" href="curriculum-sale.html">
+        <div>
+          Curriculum Sale<br> <i class="fa-solid fa-book fa-lg"></i>
+        </div>
+      </a>
+      <a class="science" href="science-fair.html">
+        <div>
+          Science & Heritage Fair<br> <i class="fa-solid fa-flask fa-lg"></i>
+        </div>
+      </a>
+      <a class="poetry" href="poetry-cafe.html">
+        <div>
+          Poetry Cafe<br> <i class="fa-solid fa-feather-pointed fa-lg"></i>
+        </div>
+      </a>
+      <a class="track" href="track-field.html">
+        <div>
+          Track & Field<br> <i class="fa-solid fa-person-running fa-lg"></i>
+        </div>
+      </a>
+    </section>
+`;
+
+class ActivitiesGrid extends HTMLElement {
+  constructor() {
+    super();
+
+    this.attachShadow({
+      mode: 'open',
+    });
+    this.shadowRoot.appendChild(activitiesTemplate.content.cloneNode(true));
+  }
+}
 
 // Define custom elements
 window.customElements.define('main-header', MainHeader);
 window.customElements.define('main-footer', MainFooter);
+window.customElements.define('activities-grid', ActivitiesGrid);
